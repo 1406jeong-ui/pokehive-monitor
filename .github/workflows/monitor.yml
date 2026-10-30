@@ -1,0 +1,36 @@
+# GitHub 저장소의 .github/workflows/monitor.yml 로 넣으면 서버 없이 무료로 주기 실행됩니다.
+# Settings > Secrets and variables > Actions 에 NTFY_TOPIC (와 선택적으로 DISCORD_WEBHOOK, KEYWORDS) 등록.
+name: PokeHive monitor
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # 5분마다 (GitHub 최소 주기, 실제로는 수 분 지연될 수 있음)
+  workflow_dispatch:         # 수동 실행 버튼
+
+permissions:
+  contents: write            # state.json 을 저장소에 커밋하기 위해 필요
+
+concurrency:
+  group: pokehive-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python monitor.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          KEYWORDS: ${{ secrets.KEYWORDS }}
+      - name: Save state
+        run: |
+          git config user.name "monitor-bot"
+          git config user.email "monitor-bot@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || (git commit -m "update state" && git push)
