@@ -14,7 +14,7 @@ The Poke Hive (Shopify) 신상품 / 재입고 알림 스크립트
   NTFY_TOPIC        (선택) ntfy 폰 푸시 토픽
   KEYWORDS          (선택) 쉼표 구분 키워드. 지정하면 제목에 포함된 상품만 알림
                     예: "Elite Trainer,Booster Bundle,Prismatic"
-  BUY_QTYS          (선택) 바로구매 링크 수량 목록. 기본 "1,2,3,5"
+  BUY_QTYS          (선택) 바로구매 링크 수량 목록. 기본 "1,2,5,6"
 
 필요 패키지: pip install requests
 """
@@ -37,7 +37,7 @@ KST = timezone(timedelta(hours=9))
 NTFY_TOPIC = os.getenv("NTFY_TOPIC", "").strip()
 DISCORD_WEBHOOK = os.getenv("DISCORD_WEBHOOK", "").strip()
 KEYWORDS = [k.strip().lower() for k in os.getenv("KEYWORDS", "").split(",") if k.strip()]
-BUY_QTYS = [int(q) for q in (os.getenv("BUY_QTYS") or "1,2,3,5").split(",") if q.strip().isdigit()]
+BUY_QTYS = [int(q) for q in (os.getenv("BUY_QTYS") or "1,2,5,6").split(",") if q.strip().isdigit()]
 
 MAX_VARIANTS_SHOWN = 5   # 옵션이 많은 상품은 앞의 5개만 링크 표시
 MAX_EVENTS = 30          # 한 번 실행에 보낼 최대 알림 수
