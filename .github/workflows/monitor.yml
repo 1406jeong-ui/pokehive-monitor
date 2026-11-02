@@ -38,7 +38,7 @@ jobs:
             start=$(date +%s)
             python monitor.py || echo "이번 회차 실패, 다음 회차에 다시 시도"
             # 상태가 바뀌었을 때만 저장 (작업이 중간에 끊겨도 기록이 남도록 매번 저장)
-            git add state.json
+            git add state*.json
             if ! git diff --cached --quiet; then
               git commit -q -m "update state"
               git pull -q --rebase && git push -q || echo "저장 실패, 다음 회차에 다시 시도"
