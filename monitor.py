@@ -63,6 +63,7 @@ MERCH_REGEX = r"funko|figure|keychain|playing cards|plush|banpresto|nanoblock|mo
 #  collections   지정하면 전체 상품 대신 해당 카테고리만 확인
 #  include_regex 제목이 이 패턴과 맞는 상품만 알림
 #  exclude_regex 제목이 이 패턴과 맞는 상품은 알림 안 함
+#  exclude_type_regex 상품 분류/태그가 이 패턴과 맞는 상품은 알림 안 함
 #  big_image     True 면 카드에 상품 사진을 크게 표시
 STORES = [
     {
@@ -106,6 +107,20 @@ STORES = [
         "exclude_regex": MERCH_REGEX,
         "big_image": True,
         "color_new": 0xE74C3C,
+    },
+    {
+        # 게임 전문점. 전체 상품이 1만5천 개 이상이라 포켓몬 실봉·원피스 TCG 카테고리만 확인.
+        # 피규어 컬렉션·바인더 컬렉션처럼 카드팩이 든 상품은 받고, 키링·아크릴·슬리브 같은 굿즈만 제외
+        "name": "Gamers Guild",
+        "url": "https://www.gamersguildusa.com",
+        "state": "state_gamersguild.json",
+        "mode": "all",
+        "collections": ["pokemon-sealed-product", "one-piece-tcg"],
+        "keywords": ["pokemon", "one piece"],
+        "exclude_regex": GRADED_REGEX + r"|keychain|acrylic|backpack|bottle|plush|blind box|trainer guess|"
+                         r"\bbook\b|guide|ultra pro|sleeves|playmat|ticket",
+        "big_image": True,
+        "color_new": 0x1ABC9C,
     },
 ]
 
@@ -154,6 +169,7 @@ def simplify(p):
         "handle": p["handle"],
         "image": images[0]["src"] if images else None,
         "match_text": norm(" ".join([p["title"], p.get("product_type", ""), " ".join(p.get("tags", []))])),
+        "type_text": norm(" ".join([p.get("product_type", ""), " ".join(p.get("tags", []))])),
         "variants": {
             str(v["id"]): {
                 "title": v.get("title", ""),
@@ -168,6 +184,9 @@ def simplify(p):
 def matches(store, product):
     ex = store.get("exclude_regex")
     if ex and re.search(ex, product["title"], re.IGNORECASE):
+        return False
+    ext = store.get("exclude_type_regex")
+    if ext and re.search(ext, product.get("type_text", ""), re.IGNORECASE):
         return False
     inc = store.get("include_regex")
     if inc and not re.search(inc, product["title"], re.IGNORECASE):
@@ -204,6 +223,8 @@ def check_all_mode(store):
     path = HERE / store["state"]
     new = {str(p["id"]): simplify(p) for p in fetch_products(store)}
     old = load_state(path)
+    if isinstance(old, dict) and "seen" in old:  # 이전에 "new" 모드로 저장된 기록이면 기준선부터 다시
+        old = None
     events = []
     if old is not None:
         for pid, p in new.items():
@@ -218,7 +239,7 @@ def check_all_mode(store):
             ]
             if restocked:
                 events.append({"kind": "restock", "product": p, "variant_ids": restocked})
-    save_state(path, {pid: {k: v for k, v in p.items() if k != "match_text"} for pid, p in new.items()})
+    save_state(path, {pid: {k: v for k, v in p.items() if k not in ("match_text", "type_text")} for pid, p in new.items()})
     return events, old is None, len(new)
 
 
