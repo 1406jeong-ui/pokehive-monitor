@@ -4601,7 +4601,7 @@
   "variants": {
    "49121772601652": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "52.00"
    }
   }
