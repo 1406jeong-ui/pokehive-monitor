@@ -2424,7 +2424,7 @@
   "variants": {
    "49246923718964": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "14.99"
    }
   }
@@ -2436,7 +2436,7 @@
   "variants": {
    "49246923325748": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "14.99"
    }
   }
@@ -4577,7 +4577,7 @@
   "variants": {
    "49121772601652": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "52.00"
    }
   }
