@@ -24,6 +24,7 @@ Shopify 쇼핑몰 신상품 / 재입고 디스코드 알림 스크립트
 
 import json
 import os
+import re
 import sys
 import time
 import unicodedata
@@ -40,6 +41,12 @@ NTFY_TOPIC = os.getenv("NTFY_TOPIC", "").strip()
 DISCORD_WEBHOOK = os.getenv("DISCORD_WEBHOOK", "").strip()
 POKEHIVE_KEYWORDS = [k.strip() for k in os.getenv("KEYWORDS", "").split(",") if k.strip()]
 BUY_QTYS = [int(q) for q in (os.getenv("BUY_QTYS") or "1,2,5,6").split(",") if q.strip().isdigit()]
+
+# 등급 카드 제목 패턴 (PSA·CGC·BGS·TAG 등 그레이딩 회사 + 점수)
+GRADED_REGEX = (
+    r"\b(PSA|BGS|BVG|CGC|SGC|TAG|PCG|ACE|GMA|HGA|AGS|CSG|ARS|MNT)\b"
+    r"(\s+(GEM\s*(MT|MINT)|MINT|NM-MT|PRISTINE|AUTH(ENTIC)?))?\s*\d{1,2}(\.\d)?\b"
+)
 
 # ---------------------------------------------------------------- 감시할 쇼핑몰 목록
 #  mode      "all" = 신상품 + 재입고 / "new" = 신상품만
@@ -70,6 +77,8 @@ STORES = [
         "mode": "new",
         "pages": 2,
         "keywords": ["pokemon", "one piece"],
+        # 등급 카드(슬랩) 제외: 제목에 "PSA 10", "CGC 9.5", "BGS 9.5", "TAG 10" 같은 표기가 있으면 알림 안 함
+        "exclude_regex": GRADED_REGEX,
         "color_new": 0xE67E22,
     },
 ]
@@ -125,6 +134,9 @@ def simplify(p):
 
 
 def matches(store, product):
+    ex = store.get("exclude_regex")
+    if ex and re.search(ex, product["title"], re.IGNORECASE):
+        return False
     kws = [norm(k) for k in store["keywords"]]
     return not kws or any(k in product["match_text"] for k in kws)
 
