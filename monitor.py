@@ -48,10 +48,22 @@ GRADED_REGEX = (
     r"(\s+(GEM\s*(MT|MINT)|MINT|NM-MT|PRISTINE|AUTH(ENTIC)?))?\s*\d{1,2}(\.\d)?\b"
 )
 
+# 카드 상품 제목 패턴 (굿즈를 걸러내기 위함)
+TCG_REGEX = (
+    r"trading card|card game|\btcg\b|booster|elite trainer|\betb\b|blister|starter deck|"
+    r"battle deck|mystery pack|sleeved pack|collection box|premium collection"
+)
+# 카드처럼 보여도 굿즈인 상품 (펀코 4-Pack, 피규어 디스플레이, 트럼프 카드 등)
+MERCH_REGEX = r"funko|figure|keychain|playing cards|plush|banpresto|nanoblock|model kit"
+
 # ---------------------------------------------------------------- 감시할 쇼핑몰 목록
-#  mode      "all" = 신상품 + 재입고 / "new" = 신상품만
-#  keywords  비어 있으면 모든 상품, 있으면 하나라도 포함된 상품만 알림 (대소문자·악센트 무시)
-#  pages     "new" 모드에서 확인할 최신 상품 페이지 수 (1페이지 = 250개)
+#  mode          "all" = 신상품 + 재입고 / "new" = 신상품만
+#  keywords      비어 있으면 모든 상품, 있으면 하나라도 포함된 상품만 알림 (대소문자·악센트 무시)
+#  pages         "new" 모드에서 확인할 최신 상품 페이지 수 (1페이지 = 250개)
+#  collections   지정하면 전체 상품 대신 해당 카테고리만 확인
+#  include_regex 제목이 이 패턴과 맞는 상품만 알림
+#  exclude_regex 제목이 이 패턴과 맞는 상품은 알림 안 함
+#  big_image     True 면 카드에 상품 사진을 크게 표시
 STORES = [
     {
         "name": "ThePokeHive",
@@ -81,6 +93,20 @@ STORES = [
         "exclude_regex": GRADED_REGEX,
         "color_new": 0xE67E22,
     },
+    {
+        # FYE 는 피규어·의류·머그컵 등 굿즈가 많아서, 포켓몬/원피스/트레이딩카드 카테고리만 보고
+        # 제목이 카드 상품(TCG, 부스터, ETB, 블리스터 등)인 것만 알림
+        "name": "FYE",
+        "url": "https://www.fye.com",
+        "state": "state_fye.json",
+        "mode": "all",
+        "collections": ["pokemon", "one-piece", "trading-cards"],
+        "keywords": ["pokemon", "one piece"],
+        "include_regex": TCG_REGEX,
+        "exclude_regex": MERCH_REGEX,
+        "big_image": True,
+        "color_new": 0xE74C3C,
+    },
 ]
 
 MAX_VARIANTS_SHOWN = 5    # 옵션이 많은 상품은 앞의 5개만 링크 표시
@@ -97,21 +123,27 @@ def norm(s):
 
 
 def fetch_products(store, max_pages=None):
-    products, page = [], 1
-    while max_pages is None or page <= max_pages:
-        r = requests.get(
-            f"{store['url']}/products.json",
-            params={"limit": 250, "page": page},
-            headers=HEADERS,
-            timeout=30,
-        )
-        r.raise_for_status()
-        batch = r.json().get("products", [])
-        if not batch:
-            break
-        products.extend(batch)
-        page += 1
-        time.sleep(1)  # 서버에 부담 주지 않도록
+    paths = [f"/collections/{c}/products.json" for c in store.get("collections", [])] or ["/products.json"]
+    products, seen_ids = [], set()
+    for path in paths:
+        page = 1
+        while max_pages is None or page <= max_pages:
+            r = requests.get(
+                f"{store['url']}{path}",
+                params={"limit": 250, "page": page},
+                headers=HEADERS,
+                timeout=30,
+            )
+            r.raise_for_status()
+            batch = r.json().get("products", [])
+            if not batch:
+                break
+            for p in batch:  # 여러 카테고리에 같은 상품이 있으면 한 번만
+                if p["id"] not in seen_ids:
+                    seen_ids.add(p["id"])
+                    products.append(p)
+            page += 1
+            time.sleep(1)  # 서버에 부담 주지 않도록
     return products
 
 
@@ -136,6 +168,9 @@ def simplify(p):
 def matches(store, product):
     ex = store.get("exclude_regex")
     if ex and re.search(ex, product["title"], re.IGNORECASE):
+        return False
+    inc = store.get("include_regex")
+    if inc and not re.search(inc, product["title"], re.IGNORECASE):
         return False
     kws = [norm(k) for k in store["keywords"]]
     return not kws or any(k in product["match_text"] for k in kws)
@@ -261,7 +296,7 @@ def build_embed(store, ev):
         embed["fields"].append({"name": "장바구니에 담기", "value": " | ".join(cart_lines)[:1024], "inline": False})
     embed["fields"].append({"name": "링크", "value": f"[상품 페이지]({url}) | [장바구니]({base}/cart) | [전체 상품]({base}/collections/all)", "inline": False})
     if p.get("image"):
-        embed["image" if store["mode"] == "new" else "thumbnail"] = {"url": p["image"]}
+        embed["image" if store.get("big_image", store["mode"] == "new") else "thumbnail"] = {"url": p["image"]}
     return embed
 
 
