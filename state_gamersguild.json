@@ -6814,7 +6814,7 @@
   "variants": {
    "53754176962923": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "49.99"
    }
   }
@@ -6826,7 +6826,7 @@
   "variants": {
    "53754177126763": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "99.99"
    }
   }
@@ -7158,27 +7158,27 @@
   "variants": {
    "52719074017643": {
     "title": "Shanks",
-    "available": false,
+    "available": true,
     "price": "27.99"
    },
    "52719084667243": {
     "title": "Luffy",
-    "available": false,
+    "available": true,
     "price": "27.99"
    },
    "52719084700011": {
     "title": "Hancock",
-    "available": false,
+    "available": true,
     "price": "27.99"
    },
    "53959895023979": {
     "title": "Shanks v2",
-    "available": false,
+    "available": true,
     "price": "27.99"
    },
    "53959895056747": {
     "title": "Luffy v2",
-    "available": false,
+    "available": true,
     "price": "27.99"
    },
    "53959895089515": {
