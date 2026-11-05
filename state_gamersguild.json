@@ -7158,7 +7158,7 @@
   "variants": {
    "52719074017643": {
     "title": "Shanks",
-    "available": true,
+    "available": false,
     "price": "27.99"
    },
    "52719084667243": {
@@ -7178,7 +7178,7 @@
    },
    "53959895056747": {
     "title": "Luffy v2",
-    "available": true,
+    "available": false,
     "price": "27.99"
    },
    "53959895089515": {
