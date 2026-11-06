@@ -4522,18 +4522,6 @@
    }
   }
  },
- "9332061143348": {
-  "title": "banpresto One Piece Senkozekkei Dorry Statue",
-  "handle": "banpresto-one-piece-senkozekkei-dorry-statue_aec-bpst00604",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4447836-3427376_5fb9d1f0-b004-4a30-a3d4-e765a80047c9.jpg?v=1789659505",
-  "variants": {
-   "49121805271348": {
-    "title": "Default Title",
-    "available": false,
-    "price": "25.99"
-   }
-  }
- },
  "9332061176116": {
   "title": "Banpresto - One Piece - Paldolce - Tony Tony Chopper & Pirate Ship Ver A Figure",
   "handle": "banpresto-one-piece-paldolce-tony-tony-chopper-pirate-ship-ver-a-figure_aec-bpst18822",
@@ -4684,6 +4672,18 @@
   "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4447839-3427379_db390860-cd68-4881-b20b-1a2ec3bb8fc2.jpg?v=1789659501",
   "variants": {
    "49121803993396": {
+    "title": "Default Title",
+    "available": true,
+    "price": "25.99"
+   }
+  }
+ },
+ "9332059734324": {
+  "title": "Banpresto - One Piece - Grandista - Monkey D. Luffy Gear 5 III Statue",
+  "handle": "banpresto-one-piece-grandista-monkey-d-luffy-gear-5-iii-statue_aec-bpst19140",
+  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4497876-3540513_ba2be579-c752-4503-a178-641544083dba.jpg?v=1793984630",
+  "variants": {
+   "49121803829556": {
     "title": "Default Title",
     "available": true,
     "price": "25.99"
