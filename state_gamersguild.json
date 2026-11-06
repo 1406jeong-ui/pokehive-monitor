@@ -7,52 +7,52 @@
    "53455531639147": {
     "title": "Pikachu",
     "available": false,
-    "price": "23.82"
+    "price": "24.37"
    },
    "53455531671915": {
     "title": "Espeon",
     "available": true,
-    "price": "23.54"
+    "price": "22.44"
    },
    "53455531704683": {
     "title": "Mew",
     "available": true,
-    "price": "25.14"
+    "price": "23.25"
    },
    "53455531737451": {
     "title": "Lapras",
     "available": true,
-    "price": "23.69"
+    "price": "23.05"
    },
    "53455531770219": {
     "title": "Moltres",
     "available": true,
-    "price": "22.15"
+    "price": "23.39"
    },
    "53455531802987": {
     "title": "Zapdos",
     "available": false,
-    "price": "21.88"
+    "price": "21.61"
    },
    "53455531835755": {
     "title": "Umbreon",
     "available": true,
-    "price": "24.34"
+    "price": "24.70"
    },
    "53455531868523": {
     "title": "Mewtwo",
     "available": true,
-    "price": "23.61"
+    "price": "22.74"
    },
    "53455531901291": {
     "title": "Toxtricity",
     "available": true,
-    "price": "23.38"
+    "price": "22.06"
    },
    "53455531934059": {
     "title": "Greninja",
     "available": true,
-    "price": "22.76"
+    "price": "20.50"
    }
   }
  },
