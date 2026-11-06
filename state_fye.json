@@ -2724,7 +2724,7 @@
   "variants": {
    "49191737917748": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "25.99"
    }
   }
@@ -4999,18 +4999,6 @@
     "title": "Default Title",
     "available": true,
     "price": "34.99"
-   }
-  }
- },
- "9332057768244": {
-  "title": "Banpresto One Piece Battle Record Miss Buckingham Stussy Statue",
-  "handle": "banpresto-one-piece-battle-record-miss-buckingham-stussy-statue_aec-bpst13636",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4471916-3478352_eedcde71-265c-4bae-955a-20d8a679aa6a.jpg?v=1792942381",
-  "variants": {
-   "49121801863476": {
-    "title": "Default Title",
-    "available": true,
-    "price": "26.99"
    }
   }
  },
