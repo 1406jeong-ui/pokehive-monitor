@@ -122,6 +122,19 @@ STORES = [
         "big_image": True,
         "color_new": 0x1ABC9C,
     },
+    {
+        # 홀마크 선물 가게. 장식품·카드(인사장) 등이 대부분이라 포켓몬/게임 카테고리에서
+        # 제목이 카드 게임 상품인 것만 알림
+        "name": "Trudy's Hallmark",
+        "url": "https://trudyshallmark.com",
+        "state": "state_trudys.json",
+        "mode": "all",
+        "collections": ["pokemon", "the-pokemon-company", "game"],
+        "keywords": ["pokemon", "one piece"],
+        "include_regex": TCG_REGEX,
+        "big_image": True,
+        "color_new": 0xF1C40F,
+    },
 ]
 
 MAX_VARIANTS_SHOWN = 5    # 옵션이 많은 상품은 앞의 5개만 링크 표시
@@ -287,12 +300,21 @@ def build_embed(store, ev):
     first = variants[vids[0]] if vids else {}
     in_stock = any(variants[v]["available"] for v in vids)
 
+    # 제목에 "Limit 1" 같은 1인당 구매 제한이 있으면 그 수량까지만 링크 표시
+    m_limit = re.search(r"\blimit\s*(\d+)", p["title"], re.IGNORECASE)
+    qtys = BUY_QTYS
+    limit_note = ""
+    if m_limit:
+        limit = int(m_limit.group(1))
+        qtys = [q for q in BUY_QTYS if q <= limit] or [limit]
+        limit_note = f"⚠️ 1인당 {limit}개 구매 제한"
+
     buy_lines, cart_lines = [], []
     for vid in vids:
         v = variants[vid]
         label = variant_label(v)
         if v["available"]:
-            qty_links = " | ".join(f"[{q}개]({checkout_link(store, vid, q)})" for q in BUY_QTYS)
+            qty_links = " | ".join(f"[{q}개]({checkout_link(store, vid, q)})" for q in qtys)
             buy_lines.append(f"{label}: {qty_links}")
             cart_lines.append(f"[{label} 담기]({add_to_cart_link(store, vid)})")
         else:
@@ -301,6 +323,8 @@ def build_embed(store, ev):
         buy_lines.append(f"외 옵션 {len(ev['variant_ids']) - MAX_VARIANTS_SHOWN}개는 상품 페이지에서 확인")
 
     is_new = ev["kind"] == "new"
+    if limit_note:
+        buy_lines.insert(0, limit_note)
     embed = {
         "author": {"name": f"{'🆕 신상품' if is_new else '🔔 재입고'} | {store['name']}", "url": base},
         "title": p["title"][:256],
