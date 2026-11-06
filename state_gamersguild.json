@@ -6,7 +6,7 @@
   "variants": {
    "53455531639147": {
     "title": "Pikachu",
-    "available": false,
+    "available": true,
     "price": "24.37"
    },
    "53455531671915": {
@@ -31,7 +31,7 @@
    },
    "53455531802987": {
     "title": "Zapdos",
-    "available": false,
+    "available": true,
     "price": "21.61"
    },
    "53455531835755": {
@@ -2636,7 +2636,7 @@
   "variants": {
    "53455552905579": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "23.48"
    }
   }
@@ -4536,7 +4536,7 @@
   "variants": {
    "53455524725099": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "49.65"
    }
   }
@@ -4812,7 +4812,7 @@
   "variants": {
    "53455524102507": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "59.51"
    }
   }
@@ -4944,7 +4944,7 @@
   "variants": {
    "53455525020011": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "64.51"
    }
   }
