@@ -4529,7 +4529,7 @@
   "variants": {
    "49121805271348": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "25.99"
    }
   }
