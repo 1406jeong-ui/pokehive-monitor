@@ -180,13 +180,13 @@
   }
  },
  "12502471180606": {
-  "title": "Pokémon TCG: 30th Celebration Mini Tins 10 Pack (1 of each style, 10 tins total)  pre-order October 2, 2026",
+  "title": "Pokémon TCG: 30th Celebration Mini Tins 10 Pack (1 of each style, 10 tins total)  ships by 11/13",
   "handle": "pokemon-tcg-30th-celebration-mini-tins-10-pack-1-of-each-style-10-tins-total-pre-order-october-2-2026",
   "image": "https://cdn.shopify.com/s/files/1/0722/8951/7886/files/AD0CE0C9-D7C8-46CF-9C95-46BC7BA440A1.webp?v=1790646510",
   "variants": {
    "53842641912126": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "209.99"
    }
   }
