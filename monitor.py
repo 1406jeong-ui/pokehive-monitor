@@ -135,6 +135,23 @@ STORES = [
         "big_image": True,
         "color_new": 0xF1C40F,
     },
+    {
+        # 포켓몬 실봉 전문점 (shop.com/m/allpoketcg 와 같은 상점). 제목에 "Pokemon"이 없는 상품이 많아서
+        # 키워드 대신 굿즈·다른 카드게임·라이브 개봉(LIVE)·등급 카드를 빼는 방식으로 거름
+        "name": "AllPokeTCG",
+        "url": "https://allpoketcg.com",
+        "state": "state_allpoketcg.json",
+        "mode": "all",
+        "keywords": [],
+        "exclude_type_regex": r"accessor|binder|blind box|plush|\btoy\b|sleeve|playmat|single|mystery slab|"
+                              r"^figure (?!collection)|^figure$|^live|commander|illumineer|collector booster|"
+                              r"play booster|jumpstart|draft night|hobby box",
+        "exclude_regex": GRADED_REGEX + r"|palworld|lorcana|magic|\bmtg\b|commander|yu-?gi-?oh|digimon|"
+                         r"dragon ball|star wars|riftbound|gundam|union arena|weiss|\blive\b|labubu|pop mart|"
+                         r"god box|mystery|toploader",
+        "big_image": True,
+        "color_new": 0xE91E63,
+    },
 ]
 
 MAX_VARIANTS_SHOWN = 5    # 옵션이 많은 상품은 앞의 5개만 링크 표시
