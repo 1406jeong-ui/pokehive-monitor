@@ -602,7 +602,7 @@
   "variants": {
    "49121941848372": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "16.49"
    }
   }
