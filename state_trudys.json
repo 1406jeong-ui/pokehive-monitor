@@ -215,6 +215,18 @@
    }
   }
  },
+ "10365374988505": {
+  "title": "Like Herding Cats",
+  "handle": "like-herding-cats",
+  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/PPG7905.2.webp?v=1793044862",
+  "variants": {
+   "50831838183641": {
+    "title": "Default Title",
+    "available": true,
+    "price": "19.99"
+   }
+  }
+ },
  "9135505866969": {
   "title": "Succulents Score Pads Playing Cards Accessory",
   "handle": "succulents-score-pads-playing-cards-accessory",
@@ -296,18 +308,6 @@
     "title": "Default Title",
     "available": true,
     "price": "7.99"
-   }
-  }
- },
- "10365374988505": {
-  "title": "Like Herding Cats",
-  "handle": "like-herding-cats",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/PPG7905.2.webp?v=1793044862",
-  "variants": {
-   "50831838183641": {
-    "title": "Default Title",
-    "available": true,
-    "price": "19.99"
    }
   }
  },
