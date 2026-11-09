@@ -978,7 +978,7 @@
   "variants": {
    "49915250999538": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "49.99"
    }
   }
