@@ -6,7 +6,7 @@
   "variants": {
    "53455531639147": {
     "title": "Pikachu",
-    "available": true,
+    "available": false,
     "price": "24.37"
    },
    "53455531671915": {
@@ -51,7 +51,7 @@
    },
    "53455531934059": {
     "title": "Greninja",
-    "available": true,
+    "available": false,
     "price": "20.50"
    }
   }
