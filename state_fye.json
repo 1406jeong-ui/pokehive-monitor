@@ -3413,7 +3413,7 @@
   "variants": {
    "49122308161844": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "14.99"
    }
   }
