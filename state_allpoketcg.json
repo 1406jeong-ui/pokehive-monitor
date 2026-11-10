@@ -402,7 +402,7 @@
   "variants": {
    "67824885137650": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "79.88"
    }
   }
