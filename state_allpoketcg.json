@@ -870,7 +870,7 @@
   "variants": {
    "50002142429426": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "124.99"
    }
   }
