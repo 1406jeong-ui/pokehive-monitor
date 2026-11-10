@@ -714,7 +714,7 @@
   "variants": {
    "50098395611378": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "999.99"
    }
   }
