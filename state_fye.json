@@ -4624,7 +4624,7 @@
   "variants": {
    "48736463651124": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "6.88"
    }
   }
@@ -4696,7 +4696,7 @@
   "variants": {
    "48563876102452": {
     "title": "OS",
-    "available": true,
+    "available": false,
     "price": "49.99"
    }
   }
@@ -4708,7 +4708,7 @@
   "variants": {
    "48555253072180": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "24.99"
    }
   }
@@ -5500,7 +5500,7 @@
   "variants": {
    "49327212658996": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "7.99"
    }
   }
