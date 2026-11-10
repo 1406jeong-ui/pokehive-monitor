@@ -147,7 +147,7 @@
   "variants": {
    "53455552905579": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "23.48"
    }
   }
