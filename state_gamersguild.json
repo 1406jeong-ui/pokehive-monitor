@@ -3768,7 +3768,7 @@
   "variants": {
    "53455536816491": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "384.99"
    }
   }
@@ -4668,7 +4668,7 @@
   "variants": {
    "53455534817643": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "29.99"
    }
   }
@@ -4680,7 +4680,7 @@
   "variants": {
    "53455535997291": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "29.99"
    }
   }
@@ -7158,7 +7158,7 @@
   "variants": {
    "52719074017643": {
     "title": "Shanks (Sunohara Artwork)",
-    "available": false,
+    "available": true,
     "price": "23.45"
    },
    "52719084667243": {
