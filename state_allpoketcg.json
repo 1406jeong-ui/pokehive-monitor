@@ -342,8 +342,8 @@
   "variants": {
    "67992428511474": {
     "title": "Default Title",
-    "available": false,
-    "price": "489.99"
+    "available": true,
+    "price": "449.99"
    }
   }
  },
