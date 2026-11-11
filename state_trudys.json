@@ -1,16 +1,4 @@
 {
- "10310086623449": {
-  "title": "Pokémon Trading Card Game: 30th Celebration Elite Trainer Box - Limit 1",
-  "handle": "pokemon-trading-card-game-30th-celebration-elite-trainer-box-limit-1",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/196214158801.avif?v=1790010646",
-  "variants": {
-   "50506622959833": {
-    "title": "Default Title",
-    "available": false,
-    "price": "124.99"
-   }
-  }
- },
  "10361722110169": {
   "title": "Pokémon Trading Card Game: Mega Evolution Pitch Black Sleeved Booster",
   "handle": "pokemon-trading-card-game-mega-evolution-pitch-black-sleeved-booster",
@@ -20,18 +8,6 @@
     "title": "Default Title",
     "available": true,
     "price": "6.99"
-   }
-  }
- },
- "10394399801561": {
-  "title": "Pokémon TCG: 30th Celebration Ultra-Premium Collections—Day or Night - Limit 1",
-  "handle": "pokemon-trading-card-game-30th-celebration-ultra-premium-collection-limit-1",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/Ultra-Premium_Collection_Day_Or_Night.png?v=1793980316",
-  "variants": {
-   "51519688573145": {
-    "title": "Default Title",
-    "available": false,
-    "price": "349.99"
    }
   }
  },
