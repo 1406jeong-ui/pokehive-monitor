@@ -1730,7 +1730,7 @@
   "variants": {
    "49122317402420": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "12.00"
    }
   }
