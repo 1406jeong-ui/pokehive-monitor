@@ -2477,18 +2477,6 @@
    }
   }
  },
- "9359234072884": {
-  "title": "Funko POP! Anime: One Piece - Monkey D. Luffy (Styles May Vary)",
-  "handle": "funko-pop-anime-one-piece-monkey-d-luffy-styles-may-vary_aec-fuko94153",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4500675-3726995_f631ea89-60e9-41f7-8ec0-9a82a4402eba.jpg?v=1794417254",
-  "variants": {
-   "49246923325748": {
-    "title": "Default Title",
-    "available": false,
-    "price": "14.99"
-   }
-  }
- },
  "9359232139572": {
   "title": "Funko POP! Anime: One Piece - Usopp",
   "handle": "funko-pop-anime-one-piece-usopp_aec-fuko94151",
@@ -2510,6 +2498,18 @@
     "title": "Default Title",
     "available": true,
     "price": "14.99"
+   }
+  }
+ },
+ "9354411671860": {
+  "title": "One Piece Law New World Headwear",
+  "handle": "one-piece-law-new-world-headwear_aec-gese35803",
+  "image": null,
+  "variants": {
+   "49238140617012": {
+    "title": "Default Title",
+    "available": true,
+    "price": "34.99"
    }
   }
  },
@@ -2755,18 +2755,6 @@
     "title": "Default Title",
     "available": true,
     "price": "22.99"
-   }
-  }
- },
- "9340929900852": {
-  "title": "Banpresto - One Piece - Theorma Soul Monkey.D.Luffy Statue",
-  "handle": "banpresto-one-piece-theorma-soul-monkey-d-luffy-statue_aec-bpst48232",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4525405-3631676_d84b7539-b4e8-48fa-96cf-894e0eee4994.jpg?v=1789659553",
-  "variants": {
-   "49172848214324": {
-    "title": "Default Title",
-    "available": false,
-    "price": "25.99"
    }
   }
  },
