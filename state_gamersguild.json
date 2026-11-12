@@ -6854,22 +6854,22 @@
   "variants": {
    "52611765043563": {
     "title": "Clefairy & Chikorita",
-    "available": false,
+    "available": true,
     "price": "30.49"
    },
    "52611765076331": {
     "title": "Togepi & Totodile",
-    "available": false,
+    "available": true,
     "price": "30.49"
    },
    "52611765109099": {
     "title": "Zorua & Cramorant",
-    "available": false,
+    "available": true,
     "price": "30.49"
    },
    "52611765141867": {
     "title": "Riolu & Darumaka",
-    "available": false,
+    "available": true,
     "price": "30.49"
    },
    "52611765174635": {
@@ -7170,7 +7170,7 @@
   "variants": {
    "52719074017643": {
     "title": "Shanks (Sunohara Artwork)",
-    "available": false,
+    "available": true,
     "price": "22.78"
    },
    "52719084667243": {
