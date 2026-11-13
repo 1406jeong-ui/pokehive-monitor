@@ -3414,7 +3414,7 @@
   "variants": {
    "48028467003634": {
     "title": "Snow",
-    "available": true,
+    "available": false,
     "price": "8.99"
    },
    "48028467036402": {
