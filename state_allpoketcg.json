@@ -6,7 +6,7 @@
   "variants": {
    "69319922548978": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "19.99"
    }
   }
