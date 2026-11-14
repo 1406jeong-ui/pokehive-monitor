@@ -3053,7 +3053,7 @@
   "variants": {
    "49158547374388": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "27.99"
    }
   }
