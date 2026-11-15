@@ -638,7 +638,7 @@
   "variants": {
    "49121996374324": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "14.99"
    }
   }
@@ -2532,7 +2532,7 @@
   "variants": {
    "49238140617012": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "34.99"
    }
   }
@@ -6054,18 +6054,6 @@
     "title": "New / Blu-ray Disc / One Piece: Collection 28",
     "available": true,
     "price": "45.99"
-   }
-  }
- },
- "8828378743092": {
-  "title": "One Piece: Collection 24",
-  "handle": "one-piece-collection-24_aec-fup10417dvd",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/3888285-2649006.jpg?v=1784758401",
-  "variants": {
-   "47243715707188": {
-    "title": "New / DVD / One Piece: Collection 24",
-    "available": true,
-    "price": "39.99"
    }
   }
  },
