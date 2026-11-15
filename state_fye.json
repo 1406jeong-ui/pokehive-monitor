@@ -1958,7 +1958,7 @@
   "variants": {
    "49389000786228": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "23.99"
    }
   }
@@ -1970,7 +1970,7 @@
   "variants": {
    "49388998721844": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "27.99"
    }
   }
@@ -1982,7 +1982,7 @@
   "variants": {
    "49388996985140": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "23.99"
    }
   }
