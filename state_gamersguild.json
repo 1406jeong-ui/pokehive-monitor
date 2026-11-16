@@ -357,7 +357,7 @@
   "variants": {
    "53019870921067": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "174.99"
    }
   }
@@ -6570,7 +6570,7 @@
    "53455536816491": {
     "title": "Default Title",
     "available": false,
-    "price": "349.99"
+    "price": "329.99"
    }
   }
  },
@@ -7304,7 +7304,7 @@
    "52623137538411": {
     "title": "Default Title",
     "available": false,
-    "price": "14.79"
+    "price": "14.03"
    }
   }
  },
