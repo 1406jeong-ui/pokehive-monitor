@@ -167,18 +167,6 @@
    }
   }
  },
- "10365375250649": {
-  "title": "Bumfuzzle",
-  "handle": "bumfuzzle",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/GF13409.hr.webp?v=1793044672",
-  "variants": {
-   "50831839101145": {
-    "title": "Default Title",
-    "available": true,
-    "price": "12.99"
-   }
-  }
- },
  "10365374988505": {
   "title": "Like Herding Cats",
   "handle": "like-herding-cats",
@@ -188,6 +176,18 @@
     "title": "Default Title",
     "available": true,
     "price": "19.99"
+   }
+  }
+ },
+ "10365375250649": {
+  "title": "Bumfuzzle",
+  "handle": "bumfuzzle",
+  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/GF13409.hr.webp?v=1793044672",
+  "variants": {
+   "50831839101145": {
+    "title": "Default Title",
+    "available": true,
+    "price": "12.99"
    }
   }
  },
@@ -263,6 +263,18 @@
    }
   }
  },
+ "10365375152345": {
+  "title": "Cat Chaos",
+  "handle": "cat-chaos",
+  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/GF13413.f.png?v=1793044636",
+  "variants": {
+   "50831838871769": {
+    "title": "Default Title",
+    "available": true,
+    "price": "9.99"
+   }
+  }
+ },
  "10365375414489": {
   "title": "Beaks",
   "handle": "beaks",
@@ -287,6 +299,18 @@
    }
   }
  },
+ "10365374824665": {
+  "title": "Escape from the Grand Hotel",
+  "handle": "escape-from-the-grand-hotel",
+  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/ES4346.f.png?v=1793044461",
+  "variants": {
+   "50831837561049": {
+    "title": "Default Title",
+    "available": true,
+    "price": "24.99"
+   }
+  }
+ },
  "10316682985689": {
   "title": "Ellen Teal Mahjong Set",
   "handle": "brouk-co-mahjong-teal",
@@ -308,30 +332,6 @@
     "title": "Default Title",
     "available": true,
     "price": "14.99"
-   }
-  }
- },
- "10365375152345": {
-  "title": "Cat Chaos",
-  "handle": "cat-chaos",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/GF13413.f.png?v=1793044636",
-  "variants": {
-   "50831838871769": {
-    "title": "Default Title",
-    "available": true,
-    "price": "9.99"
-   }
-  }
- },
- "10365374824665": {
-  "title": "Escape from the Grand Hotel",
-  "handle": "escape-from-the-grand-hotel",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/ES4346.f.png?v=1793044461",
-  "variants": {
-   "50831837561049": {
-    "title": "Default Title",
-    "available": true,
-    "price": "24.99"
    }
   }
  },
