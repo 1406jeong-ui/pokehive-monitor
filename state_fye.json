@@ -2724,7 +2724,7 @@
   "variants": {
    "49191737229620": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "22.99"
    }
   }
@@ -4939,18 +4939,6 @@
     "title": "Default Title",
     "available": true,
     "price": "34.99"
-   }
-  }
- },
- "9332057801012": {
-  "title": "Banpresto One Piece Battle Record Extra Kaido Statue",
-  "handle": "banpresto-one-piece-battle-record-extra-kaido-statue_aec-bpst13650",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4471918-3478354_70ebbb07-d85b-45db-ba7e-46d300dbd54b.jpg?v=1789659513",
-  "variants": {
-   "49121801896244": {
-    "title": "Default Title",
-    "available": true,
-    "price": "26.99"
    }
   }
  },
