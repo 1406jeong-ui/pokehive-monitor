@@ -31,7 +31,7 @@
    "53680182428011": {
     "title": "Default Title",
     "available": true,
-    "price": "9.36"
+    "price": "9.75"
    }
   }
  },
@@ -103,7 +103,7 @@
    "53754176668011": {
     "title": "Default Title",
     "available": true,
-    "price": "21.95"
+    "price": "19.32"
    }
   }
  },
@@ -120,22 +120,22 @@
    "53455531671915": {
     "title": "Espeon",
     "available": true,
-    "price": "22.99"
+    "price": "23.46"
    },
    "53455531704683": {
     "title": "Mew",
     "available": true,
-    "price": "22.99"
+    "price": "21.46"
    },
    "53455531737451": {
     "title": "Lapras",
     "available": true,
-    "price": "22.99"
+    "price": "21.95"
    },
    "53455531770219": {
     "title": "Moltres",
     "available": true,
-    "price": "22.99"
+    "price": "23.29"
    },
    "53455531802987": {
     "title": "Zapdos",
@@ -145,22 +145,22 @@
    "53455531835755": {
     "title": "Umbreon",
     "available": true,
-    "price": "22.99"
+    "price": "23.90"
    },
    "53455531868523": {
     "title": "Mewtwo",
     "available": true,
-    "price": "22.99"
+    "price": "23.42"
    },
    "53455531901291": {
     "title": "Toxtricity",
     "available": true,
-    "price": "22.99"
+    "price": "22.13"
    },
    "53455531934059": {
     "title": "Greninja",
     "available": true,
-    "price": "22.99"
+    "price": "20.83"
    }
   }
  },
@@ -252,17 +252,17 @@
    "53409358020971": {
     "title": "Mega Meganium ex",
     "available": true,
-    "price": "38.99"
+    "price": "37.67"
    },
    "53409358053739": {
     "title": "Mega Emboar ex",
     "available": true,
-    "price": "38.99"
+    "price": "37.63"
    },
    "53409358086507": {
     "title": "Mega Feraligatr ex",
     "available": true,
-    "price": "38.99"
+    "price": "37.95"
    }
   }
  },
@@ -334,7 +334,7 @@
    "53455536816491": {
     "title": "Default Title",
     "available": true,
-    "price": "319.99"
+    "price": "318.73"
    }
   }
  },
@@ -346,7 +346,7 @@
    "53455539569003": {
     "title": "Default Title",
     "available": true,
-    "price": "349.99"
+    "price": "338.41"
    }
   }
  },
@@ -778,7 +778,7 @@
    "53019871609195": {
     "title": "Default Title",
     "available": false,
-    "price": "6.50"
+    "price": "6.44"
    }
   }
  },
@@ -3224,7 +3224,7 @@
    "53455551431019": {
     "title": "Default Title",
     "available": false,
-    "price": "29.83"
+    "price": "28.35"
    }
   }
  },
@@ -3649,7 +3649,7 @@
    "53754176962923": {
     "title": "Default Title",
     "available": false,
-    "price": "35.67"
+    "price": "39.41"
    }
   }
  },
@@ -6174,7 +6174,7 @@
    "53754172440939": {
     "title": "Default Title",
     "available": false,
-    "price": "177.87"
+    "price": "174.74"
    }
   }
  },
