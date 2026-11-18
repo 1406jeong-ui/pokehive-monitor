@@ -271,6 +271,18 @@
    }
   }
  },
+ "9380690034996": {
+  "title": "Pokemon - #18 Sprigatito Model Kit QUICK",
+  "handle": "pokemon-18-sprigatito-model-kit-quick_fye-000004573102665461",
+  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4514318-3601062_6736bfa6-8cd3-4768-86cb-4cbd8f4ecb30.jpg?v=1794443639",
+  "variants": {
+   "49367955079476": {
+    "title": "Default Title",
+    "available": true,
+    "price": "14.99"
+   }
+  }
+ },
  "9332799635764": {
   "title": "Pokemon - #21 Psyduck Model Kit Quick",
   "handle": "pokemon-21-psyduck-model-kit-quick_aec-bndi74098",
@@ -628,18 +640,6 @@
     "title": "Default Title",
     "available": true,
     "price": "12.00"
-   }
-  }
- },
- "9380690034996": {
-  "title": "Pokemon - #18 Sprigatito Model Kit QUICK",
-  "handle": "pokemon-18-sprigatito-model-kit-quick_fye-000004573102665461",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4514318-3601062_6736bfa6-8cd3-4768-86cb-4cbd8f4ecb30.jpg?v=1794443639",
-  "variants": {
-   "49367955079476": {
-    "title": "Default Title",
-    "available": true,
-    "price": "14.99"
    }
   }
  },
