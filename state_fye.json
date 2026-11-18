@@ -2806,18 +2806,6 @@
    }
   }
  },
- "9333862826292": {
-  "title": "One Piece - Chopper Figurine",
-  "handle": "one-piece-chopper-figurine_aec-abss37894",
-  "image": null,
-  "variants": {
-   "49127053164852": {
-    "title": "Default Title",
-    "available": true,
-    "price": "49.99"
-   }
-  }
- },
  "9333646393652": {
   "title": "One Piece - Chopper Embossed Mug",
   "handle": "one-piece-chopper-embossed-mug_fye-000005056577786989",
@@ -4734,6 +4722,18 @@
     "title": "Default Title",
     "available": true,
     "price": "59.99"
+   }
+  }
+ },
+ "9028531814708": {
+  "title": "Otaku Lamps - One Piece Chopper 2D Lamp",
+  "handle": "otaku-lamps-one-piece-chopper-2d-lamp_fye-000000810093654048",
+  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/Otaku_Chopper_2_Web_24.jpg?v=1711376421",
+  "variants": {
+   "47783981580596": {
+    "title": "Default Title",
+    "available": true,
+    "price": "31.99"
    }
   }
  },
