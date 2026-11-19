@@ -578,7 +578,7 @@
   "variants": {
    "49121941848372": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "16.49"
    }
   }
@@ -2052,7 +2052,7 @@
   "variants": {
    "49340323954996": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "27.99"
    }
   }
@@ -2897,7 +2897,7 @@
   "variants": {
    "49129607659828": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "36.99"
    }
   }
@@ -2909,7 +2909,7 @@
   "variants": {
    "49129606218036": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "36.99"
    }
   }
@@ -2921,7 +2921,7 @@
   "variants": {
    "49129606086964": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "36.99"
    }
   }
@@ -2933,7 +2933,7 @@
   "variants": {
    "49129605464372": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "36.99"
    }
   }
