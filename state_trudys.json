@@ -119,6 +119,18 @@
    }
   }
  },
+ "10365374922969": {
+  "title": "Escape from the Museum",
+  "handle": "escape-from-the-museum",
+  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/ES6816.2.webp?v=1793044521",
+  "variants": {
+   "50831837954265": {
+    "title": "Default Title",
+    "available": true,
+    "price": "7.99"
+   }
+  }
+ },
  "9036411076825": {
   "title": "Fishin' Frenzy Fishing Game",
   "handle": "fishing-game",
@@ -164,18 +176,6 @@
     "title": "Default Title",
     "available": true,
     "price": "19.99"
-   }
-  }
- },
- "10365374922969": {
-  "title": "Escape from the Museum",
-  "handle": "escape-from-the-museum",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/ES6816.2.webp?v=1793044521",
-  "variants": {
-   "50831837954265": {
-    "title": "Default Title",
-    "available": true,
-    "price": "7.99"
    }
   }
  },
