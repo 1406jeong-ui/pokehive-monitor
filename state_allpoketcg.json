@@ -10740,8 +10740,8 @@
   "variants": {
    "44564509360370": {
     "title": "Default Title",
-    "available": false,
-    "price": "54.99"
+    "available": true,
+    "price": "39.99"
    }
   }
  },
