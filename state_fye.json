@@ -739,18 +739,6 @@
    }
   }
  },
- "9332195393844": {
-  "title": "Funko Bitty POP!: Pokemon - Charmander 4-Pack",
-  "handle": "funko-bitty-pop-pokemon-charmander-4-pack_aec-fuko81133",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4380811-3394982_86545e3d-2ae3-4796-a920-4cfd6f047c1f.jpg?v=1795108105",
-  "variants": {
-   "49121941848372": {
-    "title": "Default Title",
-    "available": false,
-    "price": "16.49"
-   }
-  }
- },
  "8893187031348": {
   "title": "Bandai Sprits Pokemon Greninja Model Kit",
   "handle": "bandai-sprits-pokemon-greninja-model-kit_fye-000004573102621382",
@@ -2345,18 +2333,6 @@
    }
   }
  },
- "9373928161588": {
-  "title": "Tamashii Nations - One Piece - S.H.Figuarts - Edward Newgate: Marineford Action Figure",
-  "handle": "tamashii-nations-one-piece-s-h-figuarts-edward-newgate-marineford-action-figure_aec-tmsh40748",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/4548968-3734332_41c6e6a4-dd89-4827-badc-369385692e46.jpg?v=1792627410",
-  "variants": {
-   "49327641461044": {
-    "title": "Default Title",
-    "available": false,
-    "price": "320.99"
-   }
-  }
- },
  "9372647620916": {
   "title": "Ichibansho - One Piece - Jewelry Bonney (Royal Princess) Masterlise Expiece Figure",
   "handle": "ichibansho-one-piece-jewelry-bonney-royal-princess-masterlise-expiece-figure_aec-bndi43671",
@@ -2642,6 +2618,18 @@
     "title": "Default Title",
     "available": true,
     "price": "14.99"
+   }
+  }
+ },
+ "9354411671860": {
+  "title": "One Piece Law New World Headwear",
+  "handle": "one-piece-law-new-world-headwear_aec-gese35803",
+  "image": null,
+  "variants": {
+   "49238140617012": {
+    "title": "Default Title",
+    "available": true,
+    "price": "34.99"
    }
   }
  },
@@ -4974,18 +4962,6 @@
    "49121772831028": {
     "title": "Default Title",
     "available": true,
-    "price": "22.00"
-   }
-  }
- },
- "9332028473652": {
-  "title": "Bandai Hobby - One Piece - Grand Ship Collection - Moby Dick Model Kit",
-  "handle": "bandai-hobby-one-piece-grand-ship-collection-moby-dick-model-kit_aec-bndi74299",
-  "image": "https://cdn.shopify.com/s/files/1/0790/7436/1652/files/3968729-3462382_cb233c85-aefb-4a53-888d-bc607600864d.jpg?v=1792602007",
-  "variants": {
-   "49121772503348": {
-    "title": "Default Title",
-    "available": false,
     "price": "22.00"
    }
   }
