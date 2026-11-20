@@ -2472,7 +2472,7 @@
   "variants": {
    "49309596352820": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "43.49"
    }
   }
@@ -2772,7 +2772,7 @@
   "variants": {
    "49192249262388": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "113.99"
    }
   }
@@ -2784,7 +2784,7 @@
   "variants": {
    "49192249458996": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "136.99"
    }
   }
@@ -2945,7 +2945,7 @@
   "variants": {
    "49186075640116": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "85.49"
    }
   }
@@ -3461,7 +3461,7 @@
   "variants": {
    "49123112943924": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "91.49"
    }
   }
