@@ -4410,7 +4410,7 @@
   "variants": {
    "47807352307954": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "79.99"
    }
   }
@@ -9535,7 +9535,7 @@
   "variants": {
    "47648804503794": {
     "title": "1 Pack",
-    "available": true,
+    "available": false,
     "price": "34.99"
    },
    "47648804536562": {
