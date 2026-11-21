@@ -35,18 +35,6 @@
    }
   }
  },
- "9698029863129": {
-  "title": "Pokémon Espeon and Umbreon 2026 Ornaments, Set of 2",
-  "handle": "pokemon-espeon-and-umbreon-ornaments-set-of-2",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/QXI1113_01.jpg?v=1775836328",
-  "variants": {
-   "48525265076441": {
-    "title": "Default Title",
-    "available": false,
-    "price": "34.99"
-   }
-  }
- },
  "9791848317145": {
   "title": "Pokémon Pikachu and Eevee Hallmark Ornaments, Set of 2",
   "handle": "pokemon-ornament-set",
@@ -56,6 +44,18 @@
     "title": "Default Title",
     "available": true,
     "price": "28.99"
+   }
+  }
+ },
+ "9698029863129": {
+  "title": "Pokémon Espeon and Umbreon 2026 Ornaments, Set of 2",
+  "handle": "pokemon-espeon-and-umbreon-ornaments-set-of-2",
+  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/QXI1113_01.jpg?v=1775836328",
+  "variants": {
+   "48525265076441": {
+    "title": "Default Title",
+    "available": false,
+    "price": "34.99"
    }
   }
  },
@@ -191,6 +191,18 @@
    }
   }
  },
+ "9108439367897": {
+  "title": "Kansas City Chiefs Trivia Challenge",
+  "handle": "kansas-city-chiefs-trivia-challenge",
+  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/KCC3240.png?v=1738371310",
+  "variants": {
+   "46358066462937": {
+    "title": "Default Title",
+    "available": true,
+    "price": "14.99"
+   }
+  }
+ },
  "10365375250649": {
   "title": "Bumfuzzle",
   "handle": "bumfuzzle",
@@ -236,18 +248,6 @@
     "title": "Default Title",
     "available": true,
     "price": "7.99"
-   }
-  }
- },
- "9108439367897": {
-  "title": "Kansas City Chiefs Trivia Challenge",
-  "handle": "kansas-city-chiefs-trivia-challenge",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/KCC3240.png?v=1738371310",
-  "variants": {
-   "46358066462937": {
-    "title": "Default Title",
-    "available": true,
-    "price": "14.99"
    }
   }
  },
