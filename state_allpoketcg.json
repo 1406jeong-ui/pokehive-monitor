@@ -9534,14 +9534,9 @@
   "image": "https://cdn.shopify.com/s/files/1/0622/1280/0754/files/151englishpackLIVE.png?v=1695242709",
   "variants": {
    "47648804503794": {
-    "title": "1 Pack",
-    "available": false,
+    "title": "Default Title",
+    "available": true,
     "price": "34.99"
-   },
-   "47648804536562": {
-    "title": "5 x Packs",
-    "available": false,
-    "price": "70.00"
    }
   }
  },
