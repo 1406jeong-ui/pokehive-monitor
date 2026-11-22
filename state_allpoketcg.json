@@ -1974,7 +1974,7 @@
   "variants": {
    "49187258007794": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "319.99"
    }
   }
