@@ -2652,7 +2652,7 @@
   "variants": {
    "49238140617012": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "34.99"
    }
   }
