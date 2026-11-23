@@ -5716,7 +5716,7 @@
   "variants": {
    "47410279645492": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "19.99"
    }
   }
