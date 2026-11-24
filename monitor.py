@@ -18,6 +18,7 @@ Shopify 쇼핑몰 신상품 / 재입고 디스코드 알림 스크립트
   NTFY_TOPIC        (선택) ntfy 폰 푸시 토픽
   KEYWORDS          (선택) The Poke Hive 전용 키워드 필터 (쉼표 구분)
   BUY_QTYS          (선택) 바로결제 링크 수량 목록. 기본 "1,2,5,6"
+  DISCORD_MENTION   (선택) 알림 때 @언급할 디스코드 사용자 ID (숫자, 여러 명은 쉼표)
 
 필요 패키지: pip install requests
 """
@@ -40,6 +41,8 @@ KST = timezone(timedelta(hours=9))
 NTFY_TOPIC = os.getenv("NTFY_TOPIC", "").strip()
 DISCORD_WEBHOOK = os.getenv("DISCORD_WEBHOOK", "").strip()
 POKEHIVE_KEYWORDS = [k.strip() for k in os.getenv("KEYWORDS", "").split(",") if k.strip()]
+# 알림 때 언급(@)할 디스코드 사용자 ID (숫자). 여러 명이면 쉼표로 구분, 역할은 앞에 & 를 붙임 (예: &123...)
+DISCORD_MENTION = os.getenv("DISCORD_MENTION", "").strip()
 BUY_QTYS = [int(q) for q in (os.getenv("BUY_QTYS") or "1,2,5,6").split(",") if q.strip().isdigit()]
 
 # 등급 카드 제목 패턴 (PSA·CGC·BGS·TAG 등 그레이딩 회사 + 점수)
@@ -362,13 +365,33 @@ def build_embed(store, ev):
     return embed
 
 
+def mention_payload():
+    """DISCORD_MENTION 값을 디스코드 언급 문구와 허용 목록으로 변환"""
+    users, roles, parts = [], [], []
+    for raw in DISCORD_MENTION.split(","):
+        x = raw.strip().strip("<>@!")
+        if x.startswith("&") and x[1:].isdigit():
+            roles.append(x[1:])
+            parts.append(f"<@&{x[1:]}>")
+        elif x.isdigit():
+            users.append(x)
+            parts.append(f"<@{x}>")
+    if not parts:
+        return {}
+    return {
+        "content": " ".join(parts),
+        "allowed_mentions": {"parse": [], "users": users, "roles": roles},
+    }
+
+
 def send_discord(embeds):
     # 디스코드는 메시지 1개에 카드 최대 10개
+    mention = mention_payload()
     for i in range(0, len(embeds), 10):
         for _ in range(3):
             r = requests.post(
                 DISCORD_WEBHOOK,
-                json={"username": "카드 입고 알림", "embeds": embeds[i:i + 10]},
+                json={"username": "카드 입고 알림", "embeds": embeds[i:i + 10], **mention},
                 timeout=15,
             )
             if r.status_code == 429:  # 너무 빠르면 잠깐 대기 후 재시도
