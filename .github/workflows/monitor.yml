@@ -30,6 +30,7 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           KEYWORDS: ${{ secrets.KEYWORDS }}
           BUY_QTYS: ${{ secrets.BUY_QTYS }}
+          DISCORD_MENTION: ${{ secrets.DISCORD_MENTION }}
         run: |
           git config user.name "monitor-bot"
           git config user.email "monitor-bot@users.noreply.github.com"
