@@ -2018,7 +2018,7 @@
   "variants": {
    "49389000786228": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "25.49"
    }
   }
@@ -2030,7 +2030,7 @@
   "variants": {
    "49388998721844": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "28.49"
    }
   }
@@ -2054,7 +2054,7 @@
   "variants": {
    "49388472795444": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "90.99"
    }
   }
