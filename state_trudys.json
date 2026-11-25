@@ -131,6 +131,18 @@
    }
   }
  },
+ "9108439367897": {
+  "title": "Kansas City Chiefs Trivia Challenge",
+  "handle": "kansas-city-chiefs-trivia-challenge",
+  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/KCC3240.png?v=1738371310",
+  "variants": {
+   "46358066462937": {
+    "title": "Default Title",
+    "available": true,
+    "price": "14.99"
+   }
+  }
+ },
  "8549761089753": {
   "title": "Bunk House™ King Of The Hill™ Travel Chess And Checkers Set",
   "handle": "bunk-house™-king-of-the-hill™-travel-chess-and-checkers-set",
@@ -152,18 +164,6 @@
     "title": "Default Title",
     "available": true,
     "price": "19.99"
-   }
-  }
- },
- "9108439367897": {
-  "title": "Kansas City Chiefs Trivia Challenge",
-  "handle": "kansas-city-chiefs-trivia-challenge",
-  "image": "https://cdn.shopify.com/s/files/1/0096/8736/7740/files/KCC3240.png?v=1738371310",
-  "variants": {
-   "46358066462937": {
-    "title": "Default Title",
-    "available": true,
-    "price": "14.99"
    }
   }
  },
