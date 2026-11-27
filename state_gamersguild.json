@@ -909,7 +909,7 @@
   "variants": {
    "53531932623211": {
     "title": "Default Title",
-    "available": false,
+    "available": true,
     "price": "8.34"
    }
   }
