@@ -18,7 +18,7 @@
   "variants": {
    "54973324689726": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "179.99"
    }
   }
@@ -42,7 +42,7 @@
   "variants": {
    "54973318463806": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "35.99"
    }
   }
