@@ -9463,7 +9463,7 @@
   "variants": {
    "47648804503794": {
     "title": "Default Title",
-    "available": true,
+    "available": false,
     "price": "34.99"
    }
   }
